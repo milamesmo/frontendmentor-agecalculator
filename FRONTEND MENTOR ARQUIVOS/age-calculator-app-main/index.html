@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+      <form action="" id="formCalculadora">
+        <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="Enviar Data"></button>
+        <div class="information">
+          <div>
+            <h4><label for="diaNasc">day</label></h4>
+            <input name="diaNasc" type="number" id="diaNasc" placeholder="DD" min="1" max="31">
+            <div id="erroMsg">This Field is Required</div>
+          </div>
+          <div>
+            <h4><label for="mesNasc">month</label></h4>
+            <input name="mesNasc" type="number" id="mesNasc" placeholder="MM" min="1" max="12">
+            <div id="erroMsg">This Field is Required</div>
+          </div>
+          <div>
+            <h4><label for="anoNasc">year</label></h4>
+            <input name="anoNasc" type="number" id="anoNasc" placeholder="YYYY" min="1970" max="2024">
+            <div id="erroMsg">This Field is Required</div>
+          </div>
+        </div>
+
+      </form>
+
+      <div class="age">
+
+
+        <div><span id="respostaano">--</span> years</div>
+        <div><span id="respostames">--</span> months</div>
+        <div><span id="respostadia">--</span> days</div>
+
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
