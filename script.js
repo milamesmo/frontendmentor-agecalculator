@@ -37,11 +37,4 @@ formCalculadora.addEventListener('submit', function calcula(e) {
 
 });
 
-var erroMsg = $('#erroMsg');
-
-if (diaNasc===NaN || mesNasc===NaN || anoNasc === NaN){
-    erroMsg.css("color", "hsl(0, 100%, 67%);");
-      };
-
-
 
